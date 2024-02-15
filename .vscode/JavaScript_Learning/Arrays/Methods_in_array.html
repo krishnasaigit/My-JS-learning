@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods in array</title>
+</head>
+<body>
+    <script>
+        let animal=["Dog","Cat","Pig","Tiger"]
+        animal.push("Lion")// Adding an element at the last to the array
+        console.log(animal)
+        document.write(animal+"<br>")
+        animal.pop("Lion")// Removing an element at the last to the array
+        console.log(animal)
+        document.write(animal+"<br>")
+        animal.shift("Dog")// Removing an element at the First to the array
+        console.log(animal)
+        document.write(animal+"<br>")
+        animal.unshift("Dog")// Adding an element at the First to the array
+        console.log(animal)
+        document.write(animal+"<br>")
+        var part=animal.slice(0,2)// Slice the an array and create it into new array.
+        console.log(part)
+        document.write(animal+"<br>")
+        var part1=animal.slice(1,4)// Slice the an array and create it into new array.
+        console.log(part1)
+        document.write(animal)  
+    </script>
+</body>
+</html>

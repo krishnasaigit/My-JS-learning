@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest_perameters</title>
+</head>
+<body>
+    <script>
+        function function_name(num1,num2,...rest){
+            console.log(rest)
+            var result=num1*num2
+            console.log(arguments)//It print the total perameters in the function
+            console.log(arguments[0])//It print the perameters depends upon the given index in the function
+            console.log(arguments.length)//It print the length of perameters in the function
+            for(num of rest){
+                result=result*num
+            }
+            console.log(result)
+        }
+        function_name(7,3,4,5,10,12,15)
+    </script>
+</body>
+</html>

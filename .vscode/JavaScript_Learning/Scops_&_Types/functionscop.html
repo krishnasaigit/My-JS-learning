@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function scope</title>
+</head>
+<body>
+    <script>
+        function sum(num1,num2){
+            let result=num1+num2
+            console.log(result);
+            console.log(arguments)//It print the total perameters in the function
+            console.log(arguments[0])//It print the perameters depends upon the given index in the function
+            console.log(arguments.length)//It print the length of perameters in the function
+        }
+        sum(4,4)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_elseif_else</title>
+</head>
+<body>
+    <script>
+        let marks=prompt("Enter the marks:")
+        if (marks>=95){
+            alert("Above 95 is comes in grade 'A'")
+            document.write("Above 95 is comes in grade 'A'")+"<br>"
+            grade="A";
+        }
+        else if(marks<95 && marks>=80){
+            alert("It comes under grade:'B'")
+            document.write("It comes under grade:'B'")+"<br>"
+            grade="B";
+        }
+        else if(marks<80 && marks>=70){
+            alert("It comes under grade:'C'")
+            document.write("It comes under grade:'C'")+"<br>"
+            grade="C";
+        }
+        else{
+            alert("It comes under grade:'D'")
+            document.write("It comes under grade:'D'")
+            grade="D";
+        }
+        // document.write("Your marks:"+marks+" ,Grade:"+grade)
+    </script>
+</body>
+</html>

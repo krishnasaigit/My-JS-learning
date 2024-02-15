@@ -1,0 +1,29 @@
+.bg-container{
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+    height: 100vh;
+    background-size:cover;
+}
+.card{
+    text-align: center;
+    background-color: rgb(10, 188, 237);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding:10px;
+    border-color: azure;
+    
+}
+.button{
+    height: 33px;
+    width: 130px;
+    /* border-radius: 25px; */
+    background-color: green;
+}
+.button:hover{
+    height: 33px;
+    width: 130px;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color: skyblue;
+    border-style: dotted;
+    border-color: aliceblue;
+}

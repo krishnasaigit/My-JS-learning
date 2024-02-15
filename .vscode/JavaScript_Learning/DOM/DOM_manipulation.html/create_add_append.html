@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create,set,append the element</title>
+</head>
+<body>
+    <div id="special">
+        <h1>This is the first heading</h1>
+        <p>This is the para1</p>
+        <p>This is the para2</p>
+    </div>
+    <script>
+        var n=document.createElement('p')
+        n.innerText="This is the added element"
+        console.log(n)
+        var parent=document.getElementById("special")
+        console.log(parent)
+        parent.appendChild(n);
+        console.log(parent.innerText)
+        console.log(parent.innerHTML)
+    </script>
+</body>
+</html>

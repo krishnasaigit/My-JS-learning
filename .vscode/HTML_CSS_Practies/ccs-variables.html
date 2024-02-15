@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables Demo</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --primary-font:35px;
+        }
+        p{
+            color: var(--primary-color);
+        }
+        h2{
+            border: 2px solid var(--primary-color);
+            font-size: var(--primary-font);
+        }
+    </style>
+</head>
+<body>
+    <p>This is css variable demo</p>
+    <h2>It is will save the time and it will save the memory.</h2>
+</body>
+</html>

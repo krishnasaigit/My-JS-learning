@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding image and and attribute</title>
+   
+</head>
+<body>
+    <div><img src="flowers.jpg" alt="imag1" id="img1"></div><br>
+    Name: <input type="text" id="txt">
+    <script>
+      var x=document.getElementById("img1")
+      x.style.width="100px"// adding the properties for the image in JS without the css style
+      x.style.height="100px"
+    // x.style.display="flex"
+    // x.style.position="absolute"
+    x.getAttribute("src")// adding the requried attribute
+    x.setAttribute("src","Krishna.jpg")// Changing the image in JS without the css style
+    var y=document.getElementById("txt")// calling the requried attribute for making or add data.
+    console.log(y)
+    y.getAttribute("value")
+    y.setAttribute("value","xyz")// adding the text in-side the form
+    </script>
+</body>
+</html>

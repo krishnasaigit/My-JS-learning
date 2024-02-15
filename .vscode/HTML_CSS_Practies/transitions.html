@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions demo</title>
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+        .two{
+            margin-top: 50px;
+            width:100px;
+            height:100px;
+            background-color: green;
+           /* Transitions-timing-functions  */
+           /* transition: 4s ease-in-out;
+            transition: 4s ease-in;
+            transition: 4s ease-out;
+            transition: 4s ease; */
+            transition: 4s linear;
+        }
+        .one:hover,.two:hover{
+            background-color: blueviolet;
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

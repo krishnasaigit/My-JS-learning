@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globel scope demo</title>
+</head>
+<body>
+    <script>
+        var a=100;//Global variable
+        function function_name(){
+            var sum=a+20;
+            console.log(sum)
+        }
+        var result=a+30;
+        console.log(result)
+        // function_name()
+    </script>
+</body>
+</html>

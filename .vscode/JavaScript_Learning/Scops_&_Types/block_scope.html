@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block_scope</title>
+</head>
+<body>
+    <script>
+        function function_name(){
+           let age=18
+           if(age>=18){
+            document.write("He is elgible for voter id")
+           } 
+           else {
+            document.write("He is not elgible for voter id")
+           }
+        }
+        function_name()
+    </script>
+    <script>
+        let x=60
+        function test(){
+            console.log(x+" Global scope")// o/p-60
+        }
+        {
+            console.log(x+" Global scope")// acessing global variable of the block so it can give the out-put as -60
+
+        }
+        {
+            const x=90
+            console.log(x+" Block scope")
+            // acessing in-side of the block so it can give the out-put as 90
+        }
+        console.log(x+" Global scope")// acessing out side of the block so it cant give the out put for inside block x.it will take the global axis x=60
+        {
+            const y=40
+        }
+        test()
+    </script>
+</body>
+</html>

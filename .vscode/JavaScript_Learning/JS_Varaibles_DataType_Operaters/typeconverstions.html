@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type converstion</title>
+</head>
+<body>
+    <script>
+    a=10
+    b="4"
+    document.write(a+b)+"<br>"+
+    document.write(a-b)+"<br>"+
+    document.write(a*b)+"<br>"+
+    document.write(a/b)
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+    c=20
+    d="B"
+    console.log(c+d)
+    console.log(c-d)
+    console.log(c*d)
+    console.log(c/d)
+    console.log(c+true) // hear true equel to 1 so 20+1=21
+    console.log(c+false)// hear true equel to 0 so 20+0=21
+    console.log(c/true)
+
+    //Explicit converstion
+    let k="java"
+    console.log(k+":"+typeof(k))
+    let l="4"
+    console.log(l+":"+typeof(l))
+    var o=Number(l)
+    console.log(o)
+    let m="20.3year"
+    console.log(parseInt("20.3year"))
+    let n= parseFloat("20.3year")
+    console.log(n)
+    let j="23bhavani"
+    console.log(parseInt("23bhavani"))
+    console.log(typeof(n))
+   
+    //Everything in a string
+    var r=68
+    var p=(String(r))
+    console.log(r+":"+typeof(p))
+    var z=String(true)
+    var y=String(undefined)
+    var x=String(null)
+    console.log(z,y,x)
+
+    //Everything in boolean
+    var p=Boolean(1)
+    var q=Boolean(-2)
+    var s=Boolean(77)
+    var t=Boolean(0)
+    console.log(p,q,s,t)
+    var u=Boolean("k")
+    var v=Boolean("murali")
+    var w=Boolean("")
+    var f=Boolean(null)
+    console.log(u,v,w,f)
+</script>
+</body>
+</html>

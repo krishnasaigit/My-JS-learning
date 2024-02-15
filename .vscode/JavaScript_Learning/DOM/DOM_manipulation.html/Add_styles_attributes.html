@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add styles</title>
+<style>
+    #special{
+        color: blue;
+    }
+    .one{
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+    <div id="special">
+        <h1>This is the heading</h1>
+    </div>
+    <script>
+        var x=document.getElementById("special")
+        x.style.color="white"//By using this formate we are changing the previes color of the text.
+        x.style.border="black 3px solid"//By using this formate we are adding the previes color of the text.
+        console.log(x.style)
+        x.getAttribute("class")//By using this formate we are adding the new attribute for the text whis is already declired in the style it is not applied to the html.
+        x.setAttribute("class","one")
+        console.log(x.getAttribute("class"))
+        
+    </script>
+</body>
+</html>

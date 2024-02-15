@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For_in_loop</title>
+</head>
+<body>
+    //for in loop using array.
+    <script>
+        let fruits=["Mango","Apple","Banana","Graps","Pomogranate"]
+        for(let index in fruits){
+          document.write(index+":"+fruits[index]+"<br>") 
+        }+"<br>"
+    </script>
+     //for in loop using object.
+    <script>
+        let person_details={'firstname':"krishna",'lastname':"Myla",'age':23}
+        for (let i in person_details){
+            document.write(i+":"+person_details[i]+"<br>")
+        }
+    </script>
+    //for in loop using string.
+     <script>
+        var name="Nani";
+        for(let ind in name){
+            document.write(ind+":"+name[ind]+"<br>")
+        }
+    </script>
+</body>
+</html>

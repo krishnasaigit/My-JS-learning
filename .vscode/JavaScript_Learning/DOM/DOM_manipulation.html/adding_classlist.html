@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding classlist</title>
+    <style>
+        .one{
+            color: white;
+        }
+        .two{
+            background-color: black;
+        }
+        .three{
+            border: blue 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="special" class="one">
+        This is the division.
+    </div>
+    <script>
+        var x=document.getElementById("special")
+        x.classList.add("two")
+        x.classList.add("three")
+        x.style.width="200px"
+        x.style.padding="5px"
+        x.style.borderRadius="5px"
+    </script>
+    
+</body>
+</html>

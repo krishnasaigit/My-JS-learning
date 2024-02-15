@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading Animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0Px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .line{
+            width: 10px;
+            height: 10px;
+            background-color: skyblue;
+            animation-name: loading;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            margin-left: 10px;
+        }
+        .container{
+            display: flex;
+        }
+        @keyframes loading{
+            30%{
+                transform:scaleY(4)
+            }
+            100%{
+                transform:scaleY(1)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="line" style="animation-delay: 100ms;"></div>
+        <div class="line" style="animation-delay: 200ms;"></div>
+        <div class="line" style="animation-delay: 300ms;"></div>
+        <div class="line" style="animation-delay: 400ms;"></div>
+        <div class="line" style="animation-delay: 500ms;"></div>
+    </div> 
+</body>
+</html>

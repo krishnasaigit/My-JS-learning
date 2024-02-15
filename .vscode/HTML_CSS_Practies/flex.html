@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Demo</title>
+    <style>
+    .parent{
+        display: flex;
+        width: 700px;
+        height: 700px;
+        border: 2px solid black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+     .child{
+        width: 100px;
+        height: 100px;
+     }
+     #c1{
+        background-color: aqua;
+     }
+     #c2{
+        background-color: rgb(247, 4, 178);
+     }
+     #c3{
+        background-color: brown;
+     }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="c1" class="child">c1</div>
+        <div id="c2" class="child" >c2</div>
+        <div id="c3" class="child">c3</div>
+        <div id="c1" class="child">c1</div>
+        <div id="c2" class="child" >c2</div>
+        <div id="c3" class="child">c3</div>
+        <div id="c1" class="child">c1</div>
+        <div id="c2" class="child" >c2</div>
+        <div id="c3" class="child">c3</div>
+        <div id="c1" class="child">c1</div>
+        <div id="c2" class="child" >c2</div>
+        <div id="c3" class="child">c3</div>
+    </div>
+</body>
+</html>

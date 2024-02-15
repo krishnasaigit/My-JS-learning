@@ -1,0 +1,12 @@
+/* input:focus{
+    color: blue;
+    background-color: green; */
+}
+/* input:required{
+    color: brown;
+    background-color: azure;
+} */
+.r:valid{
+    color: green;
+    background-color: pink;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navigation bar</title>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: #48525c;
+            background: #f6f6f6;
+            overflow: hidden;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            padding:16px;
+            border-radius:4px;
+            background-color: lightgray;
+            /* box-shadow: -6px 2px 26px #18181800, inset 0px,0px,5px; */
+            margin: 10vh auto;
+        }
+        .title{
+            margin: 38px auto;
+            text-align: center;
+        }
+        .container form{
+            display: block;
+        }        
+        .contaner form input,.container form button{
+            margin: 32px auto;
+            border-radius: 25px;
+            background-color: skyblue;
+            color: white;
+            display: none;
+            border: none;
+            outline:none;
+           }
+        .contaner form input{
+            width: 180px;
+            height: 20px;
+            border-radius:32px;  
+            border: none;
+            padding:0px 16px;
+            background-color: skyblue;
+            color: white;
+            /* box-shadow: ; */
+        }
+
+        /* .container from input:focus{
+
+         } */ 
+         /*it will be use full when we focus. */
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome!!!</h1>
+        <form>
+            <input type="Email" placeholder="Email">
+            <input type="password" placeholder="password">
+            <button class="button">Login</button>
+        </form>
+        <div>
+            <a href="#" class="forgot">Forgot password?</a>
+            <span>Dont have an account?</span>
+            <a href="https://www.google.com/">Sign Up</a>  
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach_loop</title>
+</head>
+<body>
+    <script>
+        let salaries=[500000,550000,450000,650000]
+        console.log(salaries)
+        salaries.forEach((salary,index)=>{
+            let increment=salary/10
+            salaries[index]=salary+increment
+        })
+        console.log(salaries)
+    </script>
+</body>
+</html>

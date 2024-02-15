@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation demo</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            animation-name: test;
+            animation-duration: 6s;
+            animation-iteration-count: 3;
+            animation-delay: 2s;
+            /* animation-direction: reverse;
+            animation-direction:alternate; */
+            animation-fill-mode: forwards; /*after completion of final iteration it will be steay there only it won't come to orginal postion */
+            /* animation-play-state: paused; */
+            animation-timing-function: linear;
+        }
+        /* .box:hover{
+            animation-play-state:running ;
+        } */
+        .box2{
+            animation-timing-function: ease-in;
+            margin-top:20px ;
+        }
+        @keyframes test {
+            from{
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+            }
+            to{
+                width: 500px;
+                height: 400px;
+                background-color: azure;
+                transform:translateX(400px) ;
+            }  
+        }
+        /* @keyframes test {
+            0%{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+            50%{
+                background-color: azure;
+                transform:translateX(400px) ;
+            }  
+            100%{
+                border-radius: 50px;
+                background-color: rgb(244, 64, 10);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class=" box box2"></div>
+
+</body>
+</html>

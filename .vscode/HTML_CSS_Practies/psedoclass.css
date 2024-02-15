@@ -1,0 +1,23 @@
+h1:hover{
+    color: red;
+    background-color: aqua;
+}
+.link1:link{
+    color: rgb(16, 15, 15);
+    background-color: rgb(102, 238, 102);
+    font-size: 20px;
+}
+.link1:visited{
+    color:green;
+    background-color: rgb(236, 233, 233);
+}
+.link2:active{
+    color:rgb(11, 11, 11);
+    background-color: rgb(9, 177, 233);
+}
+p:target{
+    background-color: rgba(240, 228, 10, 0.912);
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

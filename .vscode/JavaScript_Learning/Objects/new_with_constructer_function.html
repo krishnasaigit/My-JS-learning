@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New operater wirth constructer function</title>
+</head>
+<body>
+    <script>
+        function user(name,age,place){
+            this.name=name;
+            this.age=age;
+            this.place=place;
+        }
+        let user1=new user("Murali",24,"tenali")
+        console.log(user1)
+        let user2=new user("Krishna",25,"Guntur")
+        console.log(user2)
+    </script>  
+</body>
+</html>

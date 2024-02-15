@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets demo</title>
+</head>
+<body>
+    <script>
+        let s1=new Set()//It is the set creation
+        s1.add(10) //adding of elements into set
+          .add(30);
+          console.log(s1)
+        let s2=[20,30,40,50,20,40,90,100]
+        let s3=new Set(s2)
+        console.log(s3)
+        
+        let string="Hyderebad"
+        let s4=new Set(string)
+        console.log(s4)
+        
+        s4.delete("y");//delete the elements in the string
+        console.log(s4)
+        // let status=s4.has('y')
+        // console.log(status)
+        console.log(s4.has('y'))
+        
+        console.log(s4.size)// checking the size of the string
+        
+        for(ele of s4){
+            console.log(ele)
+        }
+        s4.forEach(function(ele,index){
+            console.log(ele)
+           
+            // console.log(index)
+        })
+    </script>
+    
+</body>
+</html>

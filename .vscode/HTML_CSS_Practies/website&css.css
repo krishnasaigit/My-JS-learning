@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgba (0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fflight&psig=AOvVaw0NB6Mt34jxqFMqmlko4sEj&ust=1706961407353000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMi0lfXMjIQDFQAAAAAdAAAAABAE);
+    background-size: cover;
+    background-position: center;
+}
+.navibar{
+    width: 85px;
+    
+}

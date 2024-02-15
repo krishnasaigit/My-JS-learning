@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index demo</title>
+    <style>
+        .special{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        #one{
+            background-color: skyblue;
+            color: white;
+            padding: 10px 10px;
+            position: absolute;
+            top: 27px;
+            left: 20px;
+            z-index: 5;
+        }
+        #two{
+            background-color: maroon;
+            color: white;
+            padding: 10px 10px;
+            position: absolute;
+            top: 20px;
+            left: 2px;
+            z-index: 8;
+        }
+    </style>
+</head>
+<body>
+    <div id="one" class="special">One</div>
+    <div id="two" class="special">Two</div>
+</body>
+</html>
