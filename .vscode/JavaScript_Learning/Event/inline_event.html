@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline event listener</title>
+    <style>
+        .click{
+            background-color: blue;
+            border-radius: 5px solid black;
+        }
+        #b1{
+            position: absolute;
+            top: 350px;
+            left:650px
+        }
+    </style>
+</head>
+<body>
+<div id="b1">
+    Name=<input type="text" id="first"><br><br>
+    <button onclick="change()" class="click">Change the background color</button>
+</div>
+    <script>
+        function change(){
+            document.body.style.backgroundColor="blue"
+        }
+    </script>    
+</body>
+</html>
