@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce method in array</title>
+</head>
+<body>
+    <script>
+        var num=[3,4,7,39,70,60]
+        var max=num.reduce(function(acc,ele){
+            if(acc>ele){
+                return acc
+            }
+            else{
+                return ele
+            }
+        },0)
+        console.log(max)
+    </script>
+</body>
+</html>
