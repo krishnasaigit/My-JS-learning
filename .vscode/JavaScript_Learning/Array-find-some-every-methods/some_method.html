@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some method in arrays</title>
+</head>
+<body>
+// some method gives true when the any one elements are satisfied with the given condition.//
+  <script>
+        var places=["Vijayawada","Sathupalli","Bapatla","hyderabad"]
+        var place=places.some(function(ele){
+            return ele.startsWith("V");
+            return ele.startsWith("N");
+        })
+        console.log(places)
+        console.log(place)
+    </script>
+     <script>
+        var places=["Vijayawada","Sathupalli","Bapatla","hyderabad"]
+        var place=places.find(function(ele){
+            return ele.startsWith("V");
+        })
+        console.log(places)
+        console.log(place)
+    </script>
+</body>
+</html>

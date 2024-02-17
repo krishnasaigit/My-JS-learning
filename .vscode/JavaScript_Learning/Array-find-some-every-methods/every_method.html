@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every method</title>
+</head>
+<body>
+    // every method gives true when the all elements are satisfied with the given condition if any one element not satisfied the condition it will gives false.//<br>
+    <script>
+        var marks=[70,80,40,50,60,90]
+        var result=marks.every(function(ele){
+            return ele>35;
+        })
+        console.log(result)
+    </script>
+    // every method gives true when the all elements are satisfied with the given condition if any one element not satisfied the condition it will gives false.//
+    <script>
+         var places=["vijayawada","Sathupalli","Bapatla","hyderabad"]
+        var place=places.every(function(ele){
+            return ele.startsWith("S");
+        })
+        console.log(place)
+    </script>
+</body>
+</html>

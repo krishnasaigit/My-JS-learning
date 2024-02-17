@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find method</title>
+</head>
+<body>
+    // find method gives element name when the any one element are satisfied in the array with the given condition. //
+   
+    <script>
+        var places=["vijayawada","Sathupalli","Bapatla","hyderabad"]
+        var place=places.find(function(ele){
+            return ele.startsWith("S");
+        })
+        console.log(place)
+    </script>
+    
+</body>
+</html>
