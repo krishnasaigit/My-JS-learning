@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call method</title>
+</head>
+<body>
+    <h1>This is the without call method & with call method</h1>
+    <script>//without call method.
+        var salary=20000
+        function getSalary(){
+            console.log(this.salary)
+            console.log(window.salary)
+            console.log(salary)
+        }
+        getSalary()
+    </script>
+    <script>// with call method.
+        var salary=30000
+        function getSalary(a,b){
+            console.log(this.salary)// calling inside the function
+            console.log(a,b)// calling inside the function 
+        }
+        employe={
+            salary:50000
+        }
+        employe2={
+            salary:60000
+        }
+        getSalary.call(employe,68,99)
+        getSalary.call(employe2,33,999)
+    </script>
+
+    
+</body>
+</html>

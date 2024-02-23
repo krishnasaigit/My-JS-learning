@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call & apply & bind</title>
+</head>
+<body>
+    <h1>This is the call & apply & bind </h1>
+    <script>// By using the function we are applying call & apply & bind
+        var salary=12000
+        function getSalary(a,b){
+            console.log(this.salary)
+            console.log(a,b)
+        }
+        employee={
+            salary:400000
+        }
+        employee2={
+            salary:500000
+        }
+        employee3={
+            salary:600000
+        }
+        getSalary.call(employee,49,99)
+        getSalary.apply(employee2,[58,89])
+        var res=getSalary.bind(employee3,40,60)
+           res()
+    </script>
+     <script>// By using the objects and functions inside the object we are applying call & apply & bind
+        var myObject={
+        salary:12000,
+        getSalary:function(a,b){
+            console.log(this.salary)//function in key value formate(key=getSalary:value=function)
+            console.log(a,b)
+        },
+        greet:function(wish){
+            console.log(this.name,wish)
+        }
+    }
+        employee={
+            salary:300000
+        }
+        employee2={
+            salary:600000
+        }
+        employee3={
+            name:"Nani",
+            salary:900000
+        }
+        myObject.getSalary.call(employee,49,99)
+        myObject.getSalary.apply(employee2,[58,89])
+        var res=myObject.getSalary.bind(employee3,40,60)
+           res()
+        var f1=myObject.greet.bind(employee3)
+        f1("hi how are you !!")
+    </script>
+</body>
+</html>
