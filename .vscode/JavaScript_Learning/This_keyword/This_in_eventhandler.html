@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this in eventhandler</title>
+</head>
+<body>
+    <!-- <input type="button" value="click" onclick="console.log(this)"> -->
+    <input type="button" value="click" id="btn">
+    <script>
+        document.getElementById("btn").onclick=function(){
+            console.log(this)
+        }
+    </script>
+</body>
+</html>

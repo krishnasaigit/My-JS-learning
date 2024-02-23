@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword inside method</title>
+</head>
+<body>
+    <script>
+        var movie={
+            name:"pokiri",
+            getName:function(){
+                console.log(this)
+                console.log(window)
+            }
+        }
+        movie.getName()
+    </script>
+</body>
+</html>

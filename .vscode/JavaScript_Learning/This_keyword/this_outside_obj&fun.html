@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This key-word</title>
+</head>
+<body>
+    <script>
+        var a=10
+        console.log(this)//value of this keyword.
+        function add(){
+        }
+        console.log(window.a)//value of this keyword out-side the function.
+        console.log(a)
+        console.log(this.a)
+        var ab={
+            name:"XYZ"
+        }
+        console.log(this.ab)//value of this keyword out-side the object.
+    </script>
+</body>
+</html>
