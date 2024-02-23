@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <h1>This is the Closure</h1>
+    <script>
+        function outer(){
+            var x=10;
+            function inner(){
+                var y=20;
+               console.log(x)
+            }
+            return inner
+        }
+        var res=outer()
+           res()
+    </script>
+    
+</body>
+</html>

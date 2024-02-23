@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition using Closure</title>
+</head>
+<body>
+    <script>
+        function outer(num1){
+            var x=10;
+            function inner(num2){
+                console.log(num1+num2+x)
+            }
+            return inner
+        }
+        var res=outer(3)
+        res(5)
+    </script>
+</body>
+</html>
